@@ -83,13 +83,8 @@
                 <div class="title m-b-md">
                     {{ config('app.name') }}
                 </div>
-<<<<<<< HEAD
-
-                <!--<div class="links">
-=======
                 <!--
                 <div class="links">
->>>>>>> 4eb72782ad4a8bbb96fc8d8721c25d4852852ff5
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
@@ -98,12 +93,8 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
-<<<<<<< HEAD
-                </div> -->
-=======
                 </div>
                 -->
->>>>>>> 4eb72782ad4a8bbb96fc8d8721c25d4852852ff5
             </div>
         </div>
     </body>
