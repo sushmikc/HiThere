@@ -3,10 +3,12 @@
 @section('content')
 
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify--center">
         <div class="col-md-3">
-            <div class = "add-group">
-                <button type="button" class="btn btn-block btn-sm btn-primary">Create Group</button> 
+            <div class="col-md-8">
+                <div class = "add-group">
+                    <button type="button" class="btn btn-block btn-sm btn-primary">Create Group</button> 
+                </div>
             </div>
             <form class="row my-2 px-3">
                 <input class="col-9 form-control" type="search" placeholder="Search" aria-label="Search">
@@ -15,7 +17,7 @@
                 </button>
             </form>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
             <div class="card">
                 <div class="card-header">Dashboard</div>
 
