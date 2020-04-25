@@ -22,11 +22,18 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
         $userName = Auth::user()->name;
+        $groups = \App\Group::all();
+
+        if($request->input('filter')) {
+            $groups = \App\Group::where('name', '=', $request->input('filter'))->get(); 
+        }
+
         return view('home', [
-            "userName" => $userName
+            "userName" => $userName,
+            'groups' => $groups,
         ]);
     }
 }

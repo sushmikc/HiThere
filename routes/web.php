@@ -20,3 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/groups', 'GroupsController@store')->name('groups.store');
+Route::get('/groups/{group}', 'GroupsController@show')->name('groups.show');
+
+Route::post('/messages', 'MessagesController@store')->name('messages.store');
