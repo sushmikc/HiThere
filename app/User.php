@@ -37,8 +37,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function messages()
+    public function groups()
     {
-        return(Message::class);
+        return $this->belongsToMany(Group::class);
     }
 }

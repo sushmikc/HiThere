@@ -42,6 +42,8 @@
 
             .content {
                 text-align: center;
+                height: 220px;
+                font-weight: bold;
             }
 
             .title {
@@ -64,7 +66,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref full-height" style="background-image: url('{{ asset('/images/UI.jpg') }}');">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
