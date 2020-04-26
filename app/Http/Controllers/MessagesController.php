@@ -36,10 +36,13 @@ class MessagesController extends Controller
      */
     public function store(Request $request)
     {
+        //message can be max 500 character and cannot be null
         $request->validate([
             'message' => 'required|max:500',
         ]);
 
+        //checks which group the message is going to
+        //takes senderid to display who sent the message
         $groupId = $request->input('group_id');
         $senderId = auth()->user()->id;
 

@@ -13,7 +13,9 @@
             </div>
         @endif
 
-
+        <!--
+          messages      
+        -->
         @foreach($group->messages as $message)
             <div class="row p-3 m-2 rounded" style="{{ $message->sender->id == auth()->user()->id ? 'background-color: #CAE4F6':'background-color: #E1E0E0' }}">
                 <div class="col px-0">
@@ -31,6 +33,9 @@
         @endforeach
 
     </div>
+    <!--
+      Enetr message and send          
+    -->
     <div class="card-bottom"  style="background-color: rgba(0, 0, 0, 0.03)">
         <form class="row my-2 px-4" method="POST" action="{{ route('messages.store') }}">
             @csrf 

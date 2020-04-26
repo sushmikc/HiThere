@@ -24,6 +24,7 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
+        //when user is in home page they will be able to access all groups
         $userName = Auth::user()->name;
         $groups = \App\Group::all();
 

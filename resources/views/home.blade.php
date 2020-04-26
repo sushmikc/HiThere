@@ -5,6 +5,9 @@
     <div class="row justify--center">
         <div class="col-md-3">
             <div>
+            <!--
+              Add group  
+            -->
             <form class="row my-2 px-3" method="POST" action="{{ route('groups.store') }}">
                 @csrf
                 <input name="name" class="col-9 form-control" type="text" placeholder="New Group" aria-label="Search">
@@ -14,6 +17,9 @@
             </form>
             </div>
             <div>
+            <!--
+               Search group 
+            -->
             <form class="row my-2 px-3" method="GET" action="{{ route('home') }}">
                 <input name="filter" class="col-9 form-control" type="text" placeholder="Search" aria-label="Search">
                 <button class="col-3 btn btn-outline-primary" type="submit">
